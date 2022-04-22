@@ -20,7 +20,7 @@ const forescast =(latitude,longtitude,callback)=>{
         }else 
         {
             callback(undefined,
-                response.body.current.weather_descriptions[0]+ '. It is currently '+ response.body.current.temperature +' degress out but it feels like '+response.body.current.feelslike+' degress out.'
+                response.body.current.weather_descriptions[0]+ '. It is currently '+ response.body.current.temperature +' degress out but it feels like '+response.body.current.feelslike+' degress out. And the humidity :'+response.body.current.humidity+'%.'
             )
          }
     })
